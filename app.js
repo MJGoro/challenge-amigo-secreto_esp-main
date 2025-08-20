@@ -20,4 +20,16 @@ function limpiarCaja(){
     document.querySelector("#amigo").value = "";
 }
 
- 
+ function asignarElementoYTexto(texto){
+    let elementoHTML = document.querySelector("#listaAmigos");
+    elementoHTML.innerHTML = texto;
+    return;
+ }
+
+ function listaDeAmigos(){
+    elementoHTML = "";
+    asignarElementoYTexto(`${agregarAmigo()}`);
+    return;
+ }
+
+    listaDeAmigos();
