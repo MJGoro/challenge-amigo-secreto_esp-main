@@ -8,6 +8,7 @@ function agregarAmigo(){
         alert("Por favor insertar un nombre");
     } else {
        nombresDeAmigos.push(nombreAmigo);
+       mostrarListaDeAmigos()
     } 
 
     limpiarCaja(); // Deja vacia la caja para que el usuario coloque otro nombre
@@ -19,7 +20,7 @@ function limpiarCaja(){
     document.querySelector("#amigo").value = "";
 }
 
-
+//Muestra el contenido del array en una lista
 function mostrarListaDeAmigos(){
     let listaHTML = document.getElementById("listaAmigos")
     listaHTML.innerHTML = ""; // limpiamos la lista antes de añadir los nombres
@@ -30,4 +31,4 @@ function mostrarListaDeAmigos(){
         li.textContent = nombre;
         listaHTML.appendChild(li);
     }
-})
+}
