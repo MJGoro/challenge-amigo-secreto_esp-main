@@ -32,3 +32,13 @@ function mostrarListaDeAmigos(){
         listaHTML.appendChild(li);
     }
 }
+
+function sortearAmigo(){
+
+if (nombresDeAmigos.length === 0 ){
+    alert ("Por favor, añadir amigos para poder sortear");
+    return;
+}
+
+
+}
