@@ -40,5 +40,9 @@ if (nombresDeAmigos.length === 0 ){
     return;
 }
 
+let indiceAleatorio = Math.floor(Math.random()*nombresDeAmigos.length); // Inidice aleatorio
+let amigoSorteado = nombresDeAmigos[indiceAleatorio]; // Se elige el amigo en base al indice aleatorio
+let resultadoHTML = document.getElementById("resultado");
+resultadoHTML.innerHTML = `<h3>El amigo sorteado es ${amigoSorteado}</h3>`;
 
 }
